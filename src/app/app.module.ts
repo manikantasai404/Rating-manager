@@ -3,16 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { LayoutComponent } from './components/layout/layout.component';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { myRoutes } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    LayoutComponent
+    myRoutes
   ],
   imports: [
     BrowserModule,
