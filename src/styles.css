@@ -123,3 +123,110 @@ app-signing {
 	background-color: #dc3545;
 	color: white;
 }
+
+.padding-10 {
+    padding: 10px;
+}
+
+.bold-label {
+    font-weight: 600;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.side-bar {
+    height: 100%;
+    width: 240px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #ffffff;
+    box-shadow: inset -1px 0px 0px #e4e5e7;
+}
+
+.logo-holder {
+    width: 168px;
+    height: 41px;
+    background: #cdd3dd;
+    border-radius: 8px;
+    color: #008060;
+}
+
+.padding-10-20 {
+    padding: 10px 20px;
+}
+
+.icon-18 {
+    font-size: 18px;
+    height: 18px !important;
+    width: 18px !important;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.main-div {
+    width: calc(100% - 240px);
+    margin-left: 240px;
+}
+
+.light-bg {
+    background: #f8f9fb;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.toolbar-row {
+    height: 60px;
+    border-bottom: 1px solid #e4e8ee;
+    position: fixed;
+    padding-left: 16px;
+    padding-right: 270px;
+    top: 0;
+    z-index: 1000;
+}
+
+.search-box .mat-form-field-outline {
+    background: white;
+}
+
+.search-box .mat-form-field-wrapper {
+    padding-bottom: 0px;
+}
+
+.search-box .mat-icon {
+    color: #657285;
+}
+
+.search-box input {
+    font-size: 12px;
+}
+
+.header-icons {
+    font-size: 22px;
+    color: #6a7381;
+}
+
+.header-text {
+    font-weight: 600;
+    font-size: 10px;
+    color: #6a7381;
+}
+
+.router-row {
+    margin-top: 60px;
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+
