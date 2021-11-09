@@ -3,7 +3,7 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 import { Router } from '@angular/router';
 import { ToasterService } from 'src/app/services/toaster.service';
 import { CommonService } from 'src/app/services/common.service';
-import {MatSnackBar} from '@angular/material/snack-bar';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-signing',
@@ -42,7 +42,7 @@ export class SigningComponent implements OnInit {
   signIn() {
 
     // this.toaster.open("Successfully logged in",'success')
-    
+
 
 
     let page_validity = true, diaplay_message = '';
@@ -54,31 +54,31 @@ export class SigningComponent implements OnInit {
         horizontalPosition: 'center',
         verticalPosition: 'top',
         duration: 5000,
-        panelClass:['errorSnackbar']
+        panelClass: ['errorSnackbar']
       });
       console.log(diaplay_message);
-      return;
+      // return;
     }
 
-    if (page_validity) {
+    if (!page_validity) {
       this.signApi();
     }
   }
 
-  cancel(){
-    this.employeeLoginForm.patchValue({
-      email: '',
-      password:''
-    })
+  cancel() {
+    this.employeeLoginForm.reset();
   }
 
   signApi() {
-    if (this.employeeLoginForm.value.email == 'manikanta.sai@neutrinos.co' && this.employeeLoginForm.value.password == '123456') {
-      console.log("Go in")
-      this.router.navigateByUrl(`/home`);
-    } else {
-      console.log("Fuck up");
-    }
+
+    this.router.navigateByUrl(`/joy-portal`);
+
+    // if (this.employeeLoginForm.value.email == 'manikanta.sai@neutrinos.co' && this.employeeLoginForm.value.password == '123456') {
+    //   console.log("Go in")
+    //   this.router.navigateByUrl(`/home`);
+    // } else {
+    //   console.log("Fuck up");
+    // }
   }
 
 }

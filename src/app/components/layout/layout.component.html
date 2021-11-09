@@ -8,3 +8,68 @@
       <mat-icon class="pointer" (click)="_toaster.close()">close</mat-icon>
     </div>
   </div>
+
+  <div fxLayout="column wrap" style="height:100%;width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+    <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" class="side-bar" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" style="height: 60px;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+          <div fxLayout="column wrap" class="logo-holder" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false"><span>
+                  1Platform</span></div>
+        </div>
+        <div fxLayout="row wrap" style="min-height:50px" class="padding-10-20 pointer" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false" *ngFor="let M of staticData.menus;">
+          <div fxLayout="column wrap" fxFlex="100" fxLayoutGap="20" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" (click)="menuClicked(M)">
+            <div fxLayout="row wrap" fxLayoutGap="20px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" [ngClass]="!router.url.includes(M.route)?&apos;gray-font&apos;:&apos;&apos;">
+              <div fxLayout="column wrap" style="width:20px" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+                <mat-icon class="icon-18">{{M.icon}}</mat-icon>
+              </div>
+              <div fxLayout="column wrap" fxLayoutAlign="center stretch" [fxShow]="true" [fxHide]="false">
+                <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><span class="font-14">
+                  {{M.desc}}</span></div>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column wrap" style="padding-top:10px;" fxFlex="100" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" *ngIf="M.active">
+            <div fxLayout="row wrap" style="min-height:30px" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false" *ngFor="let sub of M.submenus;" (click)="subMenuClicked(sub)" [ngClass]=" sub.disable?&apos;disable-background gray-font&apos;:(router.url.includes(sub.route)?&apos;active-submenu&apos;:&apos;gray-font&apos;)"><span [ngClass]="sub.disable?&apos;&apos;:&apos;font-600&apos;" style="margin-left:50px;" class="font-12">
+              {{sub.desc}}</span></div>
+          </div>
+        </div>
+        <!-- <div class="bold-label version-div font-10">
+          V{{backend.version}}-{{backend.env}}</div> -->
+      </div>
+      <div fxLayout="column wrap" class="main-div" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" class="light-bg width-100 toolbar-row" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+          <!-- <div fxLayout="column wrap" class="input-control search-box" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxHide.lt-md="true">
+            <mat-form-field style="width:471px;margin-top:10px;" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
+              <input matInput name="main-search" placeholder="Search" [required]="false" autocomplete="off">
+              <mat-icon matPrefix>search</mat-icon>
+            </mat-form-field>
+          </div> -->
+          <div fxLayout="column wrap" style="flex-grow: 1;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="40px" fxLayoutAlign="end center" [fxShow]="true" [fxHide]="false">
+              <div fxLayout="column wrap" class="pointer" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span class="material-icons header-icons">notifications_none</span>
+                </div><span class="header-text">
+                  Notifications</span>
+              </div>
+              <div fxLayout="column wrap" class="pointer" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+                <div>
+                  <span class="material-icons header-icons">account_circle</span>
+                </div>
+                <!-- <span class="header-text">{{ userInfo &amp;&amp; userInfo.displayName || &apos;User&apos;}}</span> -->
+              </div>
+              <!-- <div fxLayout="column wrap" class="pointer" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false" (click)="logout()">
+                <div>
+                  <span class="material-icons header-icons">logout</span>
+                </div><span class="header-text">
+                  Logout</span>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <div fxLayout="row wrap" class="router-row" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+    </div>
+  </div>
