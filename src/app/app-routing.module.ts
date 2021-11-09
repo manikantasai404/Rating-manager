@@ -6,7 +6,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { SigningComponent } from './components/signing/signing.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
   {path: 'login', component: SigningComponent},
   {path: 'home', component: HomeComponent},
   {path: 'layout', component: LayoutComponent},

@@ -1,1 +1,10 @@
-<p>layout works!</p>
+<div fxLayout="row " class="padding-10 no-display" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false" id="one-platform-toaster-div">
+    <div fxLayout="column wrap" style="width:30px" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
+      <mat-icon id="one-platform-toaster-icon">checkcircle</mat-icon>
+    </div>
+    <div fxLayout="column wrap" style="min-width:240px;margin-left:10px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false"><label id="one-platform-toaster-text" class="bold-label font-12">
+      </label></div>
+    <div fxLayout="column wrap" style="width:30px;margin-left:10px" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <mat-icon class="pointer" (click)="_toaster.close()">close</mat-icon>
+    </div>
+  </div>
