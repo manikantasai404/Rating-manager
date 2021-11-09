@@ -132,8 +132,16 @@ app-signing {
     font-weight: 600;
 }
 
+.font-weight-500 {
+    font-weight: 500;
+}
+
 .font-12 {
     font-size: 12px;
+}
+
+.font-13 {
+    font-size: 13px;
 }
 
 .side-bar {
@@ -142,16 +150,16 @@ app-signing {
     position: fixed;
     top: 0;
     z-index: 1000;
-    background: #ffffff;
+    color:  #ffffff;
+    background: #484c7f;
     box-shadow: inset -1px 0px 0px #e4e5e7;
 }
 
 .logo-holder {
     width: 168px;
     height: 41px;
-    background: #cdd3dd;
     border-radius: 8px;
-    color: #008060;
+    color: #ffffff;
 }
 
 .padding-10-20 {
@@ -168,6 +176,10 @@ app-signing {
     font-size: 14px;
 }
 
+.font-16 {
+    font-size: 16px;
+}
+
 .font-12 {
     font-size: 12px;
 }
@@ -178,7 +190,7 @@ app-signing {
 }
 
 .light-bg {
-    background: #f8f9fb;
+    background: #f9fbfd;
 }
 
 .width-100 {
@@ -227,6 +239,3 @@ app-signing {
     width: 100%;
     flex-grow: 1;
 }
-
-
-
