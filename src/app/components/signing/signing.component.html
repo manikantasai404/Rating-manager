@@ -9,7 +9,7 @@
                             <div class="input-lable">Email<span class="color-red"> *</span></div>
                             </div>
                             <mat-form-field [appearance]="'outline'" [floatLabel]="'auto'" style="width: 350px;">
-                                <input matInput placeholder="Please enter email" type="email" maxlength="50" formControlName="email" autocomplete="off">
+                                <input matInput placeholder="Please enter email" type="email" maxlength="50" formControlName="email" readonly="{{employeeLoginForm.value.password.length>0?'true':'false'}}" autocomplete="off">
                                 <!-- <mat-error align="start" *ngIf="employeeLoginForm.controls.email.hasError('required')">Please enter the email</mat-error> -->
                                 <!-- <mat-error align="start" *ngIf="!employeeLoginForm.controls.email.hasError('required') && employeeLoginForm.controls.email.errors">Please enter a valid input</mat-error> -->
                               </mat-form-field>
@@ -17,8 +17,8 @@
                                 <div class="input-lable">Password<span class="color-red"> *</span></div>
                                 </div>
                                 <mat-form-field [appearance]="'outline'" [floatLabel]="'auto'">
-                                    <input matInput placeholder="Please enter password" *ngIf="showPassword" type="username" formControlName="password" autocomplete="off">
-                                    <input matInput placeholder="Please enter password" *ngIf="!showPassword" type="password" formControlName="password" autocomplete="off">
+                                    <input matInput placeholder="Please enter password" *ngIf="showPassword" type="username" formControlName="password" autocomplete="off" readonly="{{employeeLoginForm.value.email.length>0?'true':'false'}}">
+                                    <input matInput placeholder="Please enter password" *ngIf="!showPassword" type="password" formControlName="password" autocomplete="off" readonly="{{employeeLoginForm.value.email.length>0?'true':'false'}}">
                                     <mat-icon matSuffix class="pointer" (click)="passwordToggle()" *ngIf="showPassword">visibility</mat-icon>
                                     <mat-icon matSuffix class="pointer" (click)="passwordToggle()" *ngIf="!showPassword">visibility_off</mat-icon>
                                   </mat-form-field>

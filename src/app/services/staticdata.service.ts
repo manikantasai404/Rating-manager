@@ -18,6 +18,7 @@ export class StaticdataService {
             { id: 'holidays', desc: 'Holidays', route: '/joy-portal/holidays', disable: false }
         ]
     },
+    {id: 'rating', icon: 'assignment_ind', desc: 'Rating', route: '/joy-portal/rating', active: false},
     {id: 'leave', icon: 'person', desc: 'Leaves', route: '/joy-portal/leaves', active: false},
 ];
 

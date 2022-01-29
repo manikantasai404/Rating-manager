@@ -11,6 +11,7 @@ import { EmployeedashboardComponent } from './components/employeedashboard/emplo
 import { DepartmentsComponent } from './components/departments/departments.component';
 import { HolidaysComponent } from './components/holidays/holidays.component';
 import { LeavesComponent } from './components/leaves/leaves.component';
+import { RatingComponent } from './components/rating/rating.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,7 @@ const routes: Routes = [
       { path: 'employeedashboard', component: EmployeedashboardComponent },
       { path: 'departments', component: DepartmentsComponent },
       { path: 'holidays', component: HolidaysComponent },
+      { path: 'rating', component: RatingComponent },
       { path: 'leaves', component: LeavesComponent },
     ]
   },
@@ -37,14 +39,15 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const myRoutes = [SigningComponent, 
-  HomeComponent, 
-  LayoutComponent, 
+export const myRoutes = [SigningComponent,
+  HomeComponent,
+  LayoutComponent,
   EmployeeComponent,
-  LeavesComponent, 
+  LeavesComponent,
   HolidaysComponent,
   EmployeedashboardComponent,
   AdmindashboardComponent,
   DepartmentsComponent,
   AttendanceComponent,
+  RatingComponent,
   PageNotFoundComponent]

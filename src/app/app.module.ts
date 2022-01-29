@@ -30,7 +30,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AppComponent,
     myRoutes
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,

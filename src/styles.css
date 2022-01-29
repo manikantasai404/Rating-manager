@@ -185,8 +185,8 @@ app-signing {
 }
 
 .main-div {
-    width: calc(100% - 240px);
-    margin-left: 240px;
+    width: calc(100% - 200px);
+    margin-left: 262px;
 }
 
 .light-bg {
@@ -199,7 +199,7 @@ app-signing {
 
 .toolbar-row {
     height: 60px;
-    border-bottom: 1px solid #e4e8ee;
+    /* border-bottom: 1px solid #e4e8ee; */
     position: fixed;
     padding-left: 16px;
     padding-right: 270px;
@@ -238,4 +238,8 @@ app-signing {
     margin-top: 60px;
     width: 100%;
     flex-grow: 1;
+}
+
+.white-bg {
+    background-color: #ffffff;
 }

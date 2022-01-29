@@ -20,8 +20,6 @@ export class LayoutComponent implements OnInit {
 
   menuClicked(menu: any) {
     if (menu.submenus?.length) {
-        // let index = this.staticData.menus.findIndex(x => x.id == menu.id);
-        // this.staticData.menus[index].active = !this.staticData.menus[index].active;
         menu.active = !menu.active;
     }
     else if (menu.route)
