@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: SigningComponent },
   {
-    path: 'joy-portal', component: LayoutComponent,
+    path: 'ems-tool', component: LayoutComponent,
     children: [
 
       //Admin components

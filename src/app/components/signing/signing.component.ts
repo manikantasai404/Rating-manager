@@ -71,7 +71,7 @@ export class SigningComponent implements OnInit {
 
   signApi() {
 
-    this.router.navigateByUrl(`/joy-portal`);
+    this.router.navigateByUrl(`/ems-tool`);
 
     // if (this.employeeLoginForm.value.email == 'manikanta.sai@neutrinos.co' && this.employeeLoginForm.value.password == '123456') {
     //   console.log("Go in")
