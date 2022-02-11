@@ -114,14 +114,14 @@ app-onbench {
 } */
 
 .primary-button {
-  background: #6c63ff;
+  background: black;
   color: white;
   width: 100%;
 }
 
 .signin-btn :hover {
   background: #ffffff;
-  color:#6c63ff;
+  color:black;
   width: 100%;
 }
 
@@ -132,10 +132,10 @@ app-onbench {
 }
 
 .login-header {
-  /* background-image: -webkit-linear-gradient(-180deg, #ffff, #6c63ff);
+  /* background-image: -webkit-linear-gradient(-180deg, #ffff, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
-  color: #6c63ff ;
+  color: black ;
   font-family: cursive !important;
 }
 
@@ -176,7 +176,7 @@ app-onbench {
   top: 0;
   z-index: 1000;
   color: #ffffff;
-  background: #6c63ff;
+  background: black;
   box-shadow: inset -1px 0px 0px #e4e5e7;
 }
 
@@ -276,6 +276,6 @@ app-onbench {
 .under-cunstruction {
     font-family: cursive !important;
     font-size: unset !important;
-    color: #6c63ff;
+    color: black;
     font-weight: revert !important;
 }
