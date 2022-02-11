@@ -11,14 +11,15 @@
 
   <div fxLayout="column wrap" style="height:100%;width:100%;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
     <div fxLayout="row wrap" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-      <div fxLayout="column wrap" class="side-bar" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
+      <div fxLayout="column wrap" class="side-bar" style="margin: 20px;border-radius: 28px;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
         <div fxLayout="row wrap" style="height: 100px;" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
           <!-- <div>
             <img src="/src/app/assets/home-icon.png">
           </div> -->
           <div fxLayout="column wrap" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
             <div><mat-icon>bubble_chart</mat-icon></div>
-            <div style="font-size: 25px;font-weight: 600;font-family: cursive;"><span>Joy Portal</span></div>
+            <!-- <img src="./assets/Logo.png" alt="LOGO"> -->
+            <div style="font-size: 25px;font-weight: 600;font-family: cursive;"><span>EMS Tool</span></div>
           </div>
         </div>
         <div fxLayout="row wrap" style="min-height:50px" class="padding-10-20 pointer" fxLayoutAlign="start start" [fxShow]="true" [fxHide]="false" *ngFor="let M of staticData.menus;">
@@ -42,7 +43,7 @@
           V{{backend.version}}-{{backend.env}}</div> -->
       </div>
       <div fxLayout="column wrap" class="main-div" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-        <div fxLayout="row wrap" class="light-bg width-100 toolbar-row" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
+        <div fxLayout="row wrap" class="white-bg width-100 toolbar-row" fxLayoutAlign="start center" [fxShow]="true" [fxHide]="false">
           <!-- <div fxLayout="column wrap" class="input-control search-box" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false" fxHide.lt-md="true">
             <mat-form-field style="width:471px;margin-top:10px;" [appearance]="&apos;outline&apos;" [floatLabel]="&apos;auto&apos;" [hideRequiredMarker]="false">
               <input matInput name="main-search" placeholder="Search" [required]="false" autocomplete="off">
@@ -50,7 +51,7 @@
             </mat-form-field>
           </div> -->
           <div fxLayout="column wrap" style="flex-grow: 1;" fxLayoutAlign="start stretch" [fxShow]="true" [fxHide]="false">
-            <div fxLayout="row wrap" fxLayoutGap="40px" fxLayoutAlign="end center" [fxShow]="true" [fxHide]="false">
+            <div fxLayout="row wrap" fxLayoutGap="40px" style="margin-right: 50px;" fxLayoutAlign="end center" [fxShow]="true" [fxHide]="false">
               <div fxLayout="column wrap" class="pointer" fxLayoutAlign="center center" [fxShow]="true" [fxHide]="false">
                 <div>
                   <span class="material-icons header-icons">notifications_none</span>

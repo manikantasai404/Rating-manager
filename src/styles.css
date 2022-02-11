@@ -1,241 +1,281 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-app-signing {
-    height: 100%;
-    width: 100%;
+app-signing,
+app-layout,
+app-page-not-found,
+app-admindashboard,
+app-employee,
+app-departments,
+app-projects,
+app-onbench {
+  height: 100%;
+  width: 100%;
 }
 
 .no-display {
-    position: fixed;
-    top: 0;
-    z-index: -1;
-    opacity: 0 !important;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0 !important;
 }
 
 .padding-10 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .bold-label {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .font-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .outer-dev-flex {
-	display: flex;
-	width: 100%;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .inner-dev-flex {
-	display: flex;
-	width: 50%;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .padding-5-0 {
-	padding: 5px 0px;
+  padding: 5px 0px;
 }
 
 .color-red {
-    color: red;
+  color: red;
 }
 
 .pointer {
-	cursor: pointer;
+  cursor: pointer;
 }
 
-.varient-background {
-	background: linear-gradient(-45deg, #ee7752, #f590b7, #00a9e5, #31ffcf);
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-	height: 100vh;
-}
+/* .varient-background {
+  background: linear-gradient(-45deg, #ee7752, #f590b7, #00a9e5, #31ffcf);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+} */
 
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
+/* @keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
 
 .input-lable {
-	font-weight: 500;
-	font-size: 12px;
-	line-height: 16px;
-	color: #6A7381;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6a7381;
 }
 
-.varient-background .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar {
-    background-color: #00a9e5;
+/* .varient-background .mat-tab-group.mat-primary .mat-ink-bar,
+.mat-tab-nav-bar.mat-primary .mat-ink-bar {
+  background-color: #00a9e5;
 }
 
-.varient-background .mat-form-field:not(.mat-form-field-appearance-legacy) .mat-form-field-suffix .mat-datepicker-toggle-default-icon {
-    height: 1em !important;
+.varient-background
+  .mat-form-field:not(.mat-form-field-appearance-legacy)
+  .mat-form-field-suffix
+  .mat-datepicker-toggle-default-icon {
+  height: 1em !important;
 }
 
 .varient-background .mat-form-field-appearance-outline .mat-form-field-infix {
-    padding: 0px 0px 12px 5px !important;
-    width: 300px !important;
+  padding: 0px 0px 12px 5px !important;
+  width: 300px !important;
 }
 
 .varient-background .mat-tab-body {
-    padding: 26px 0px 26px 26px;
-}
+  padding: 26px 0px 26px 26px;
+} */
 
 .primary-button {
-	background: #00a9e5;
-    color: white;
-    width: 110px;
+  background: black;
+  color: white;
+  width: 100%;
+}
+
+.signin-btn :hover {
+  background: #ffffff;
+  color:black;
+  width: 100%;
 }
 
 .secondary-button {
-	background: #f590b7;
-    color: white;
-    width: 110px;
+  background: #f590b7;
+  color: white;
+  width: 110px;
 }
 
 .login-header {
-	background-image: -webkit-linear-gradient(-45deg, #f590b7, #00a9e5);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+  /* background-image: -webkit-linear-gradient(-180deg, #ffff, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: black ;
+  font-family: cursive !important;
 }
 
 .successSnackbar {
-	background-color: #23ff56;
-	color: rgb(7, 36, 19);
+  background-color: #23ff56;
+  color: rgb(7, 36, 19);
 }
 
 .errorSnackbar {
-	background-color: #dc3545;
-	color: white;
+  background-color: #dc3545;
+  color: white;
 }
 
 .padding-10 {
-    padding: 10px;
+  padding: 10px;
 }
 
 .bold-label {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .font-weight-500 {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 .font-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .font-13 {
-    font-size: 13px;
+  font-size: 13px;
 }
 
 .side-bar {
-    height: 100%;
-    width: 240px;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    color:  #ffffff;
-    background: #484c7f;
-    box-shadow: inset -1px 0px 0px #e4e5e7;
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  color: #ffffff;
+  background: black;
+  box-shadow: inset -1px 0px 0px #e4e5e7;
 }
 
 .logo-holder {
-    width: 168px;
-    height: 41px;
-    border-radius: 8px;
-    color: #ffffff;
+  width: 168px;
+  height: 41px;
+  border-radius: 8px;
+  color: #ffffff;
 }
 
 .padding-10-20 {
-    padding: 10px 20px;
+  padding: 10px 20px;
 }
 
 .icon-18 {
-    font-size: 18px;
-    height: 18px !important;
-    width: 18px !important;
+  font-size: 18px;
+  height: 18px !important;
+  width: 18px !important;
 }
 
 .font-14 {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 .font-16 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .font-12 {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .main-div {
-    width: calc(100% - 240px);
-    margin-left: 240px;
+  width: calc(100% - 200px);
+  margin-left: 262px;
 }
 
 .light-bg {
-    background: #f9fbfd;
+  background: #f9fbfd;
 }
 
 .width-100 {
-    width: 100%;
+  width: 100%;
 }
 
 .toolbar-row {
-    height: 60px;
-    border-bottom: 1px solid #e4e8ee;
-    position: fixed;
-    padding-left: 16px;
-    padding-right: 270px;
-    top: 0;
-    z-index: 1000;
+  height: 60px;
+  /* border-bottom: 1px solid #e4e8ee; */
+  position: fixed;
+  padding-left: 16px;
+  padding-right: 270px;
+  top: 0;
+  z-index: 1000;
 }
 
 .search-box .mat-form-field-outline {
-    background: white;
+  background: white;
 }
 
 .search-box .mat-form-field-wrapper {
-    padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .search-box .mat-icon {
-    color: #657285;
+  color: #657285;
 }
 
 .search-box input {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .header-icons {
-    font-size: 22px;
-    color: #6a7381;
+  font-size: 22px;
+  color: #6a7381;
 }
 
 .header-text {
-    font-weight: 600;
-    font-size: 10px;
-    color: #6a7381;
+  font-weight: 600;
+  font-size: 10px;
+  color: #6a7381;
 }
 
 .router-row {
-    margin-top: 60px;
-    width: 100%;
-    flex-grow: 1;
+  margin-top: 60px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.white-bg {
+  background-color: #ffffff;
+}
+
+.margin-top-70 {
+    margin-top: 70px;
+}
+
+.under-cunstruction {
+    font-family: cursive !important;
+    font-size: unset !important;
+    color: black;
+    font-weight: revert !important;
 }

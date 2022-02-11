@@ -26,11 +26,13 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     myRoutes
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
